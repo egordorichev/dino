@@ -59,7 +59,7 @@ a {
 	-webkit-transition: color .1s ease-in;
 }
 
-a:hover {
+a:hover, .older-posts:hover, .newer-posts:hover {
 	text-decoration: underline;
 	color: var(--highlight-color-light);
 }
@@ -192,6 +192,17 @@ ul {
 	height: 1em;
 }
 
+#s {
+	background-color: #333;
+	padding: 0.5em;
+	border-radius: 0.4em;
+	border: none;
+	color: var(--text-color);
+}
+
+#s:focus {
+	outline: none;
+}
 
 /*
  * Post
@@ -216,8 +227,13 @@ ul {
 	margin-bottom: 5pt;
 }
 
+/* for single-page posts */
+.blog-post-title {
+	color: var(--header-color) !important;
+}
+
 .blog-post-title a {
-	color: var(--header-color);
+	color: var(--header-color) !important;
 }
 
 .blog-post-title a:hover {
@@ -236,11 +252,6 @@ ul {
 
 .blog-post-tag a:hover {
 	color: var(--highlight-color-light);
-}
-
-/* <!--more--> idk how to remove it otherwise */
-.blog-post-single tt {
-	display: none;
 }
 
 /*
@@ -291,4 +302,25 @@ code:not(.hljs) {
 .blog-post-related h4 {
 	margin-top: 40pt;
 	margin-bottom: 10pt;
+}
+
+.older-posts {
+	display: inline-block;
+	margin-right: 8pt;
+	margin-bottom: 30pt;
+}
+
+.newer-posts {
+	display: inline-block;
+	margin-left: 8pt;
+	margin-bottom: 30pt;
+}
+
+.arrow {
+
+}
+
+.search-results {
+	margin-bottom: 20pt;
+	color: var(--header-color);
 }

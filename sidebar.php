@@ -1,4 +1,4 @@
-<h2 class="sidebar-header">Stuff</h2>
+<div class="sidebar-header"><?php get_search_form(); ?></div>
 
 <div class="sidebar-link"><a target="_blank" href="#">About me</a></div>
 <div class="sidebar-link"><a target="_blank" href="https://github.com/egordorichev">Github</a></div>

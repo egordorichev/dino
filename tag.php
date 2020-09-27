@@ -1,11 +1,25 @@
 <?php 
 	get_header();
 
-	if (have_posts()) { 
+	echo '<h2 class="search-results">Posts tagged ';
+	echo get_queried_object()->name;
+
+	echo '</h2>';
+
+	if (have_posts()) {
+		echo '<ul>';
+		
 		while (have_posts()) {
 			the_post();
-			get_template_part('content', get_post_format());
+
+			echo '<li><a href="';
+			echo get_permalink();
+			echo '">';
+			the_title();
+			echo '</a></li>';
 		}
+
+		echo '</ul>';
 	} else {
 		echo 'Found nothing';
 	}
