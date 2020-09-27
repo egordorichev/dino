@@ -17,7 +17,7 @@
 	</style>
 	<div id="content">
 		<div id="header">
-			<div id="logo" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/logo.png);"></div>
+			<a href="<?php echo get_site_url(); ?>"><div id="logo" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/logo.png);"></div></a>
 			<h1 id="header-title"><a href="<?php echo get_site_url(); ?>">Rexcellent Games</a></h1>
 			<h3 id="header-subtitle"><a target="_blank" href="https://www.random.org/">
 				<?php 

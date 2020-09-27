@@ -137,6 +137,15 @@ ul {
 	border-radius: 50%;
 	background-blend-mode: multiply;
 	background-color: var(--highlight-color);
+
+
+	-moz-transition: background-color .1s ease-in;
+	-o-transition: background-color .1s ease-in;
+	-webkit-transition: background-color .1s ease-in;
+}
+
+#logo:hover {
+	background-color: #ff362a;
 }
 
 #header {
@@ -277,4 +286,9 @@ code:not(.hljs) {
 	border-radius: 0.4em;
 	padding: 0.25em;
 	font-size: 10pt !important;
+}
+
+.blog-post-related h4 {
+	margin-top: 40pt;
+	margin-bottom: 10pt;
 }
