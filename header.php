@@ -17,8 +17,9 @@
 	</style>
 	<div id="content">
 		<div id="header">
-		<h1 id="header-title">	<a href="<?php echo get_site_url(); ?>">Rexcellent Games</a></h1>
-			<h3 id="header-subtitle">
+			<div id="logo" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/logo.png);"></div>
+			<h1 id="header-title"><a href="<?php echo get_site_url(); ?>">Rexcellent Games</a></h1>
+			<h3 id="header-subtitle"><a target="_blank" href="https://www.random.org/">
 				<?php 
 					$titles = Array("Making games",
 					"Math.random()",
@@ -29,11 +30,13 @@
 					"The future calls for something new",
 					"Egor lurks here",
 					"Code & co",
-					"It takes what it takes");
+					"It takes what it takes",
+					"@egordorichev",
+					"Eügor");
 
 					echo $titles[array_rand($titles)];
 				?>
-			</h3>
+			</a></h3>
 		</div>
 
 		<div id="sidebar">

@@ -52,7 +52,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: var(--text-color-light);
+	color: var(--highlight-color);
 
 	-moz-transition: color .1s ease-in;
 	-o-transition: color .1s ease-in;
@@ -61,7 +61,12 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	color: var(--extra-text-color-light);
+	color: var(--highlight-color-light);
+}
+
+ul {
+	margin-left: 1.25em; 
+	padding-left: 0;
 }
 
 /*
@@ -80,7 +85,7 @@ a:hover {
 	background: #1e1e1e;
 	box-shadow: -10px 0 20px -13px #000, 10px 0 20px -13px #000;
 	
-	max-width: 80%;
+	max-width: 90%;
 	max-width: 900px; 
 	min-height: 100%;
 	margin: 0 auto;
@@ -92,7 +97,7 @@ a:hover {
 }
 
 #sidebar {
-	float: left;
+	float: right;
 	width: 20%;
 }
 
@@ -101,31 +106,62 @@ a:hover {
 		display: none;
 	}
 
+	#content {
+		padding: 2em !important;
+	}
+
 	#posts {
 		width: 100% !important;
+		padding-right: 0 !important;
 	}
 }
 
 #posts {
 	width: 80%;
-	float: right;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 2em;
 }
 
 /*
  * Header
  */
 
+
+#logo {
+	width: 46pt;
+	height: 46pt;
+	float: left;
+	margin-right: 10pt;
+	background-size: cover;
+	border-radius: 50%;
+	background-blend-mode: multiply;
+	background-color: var(--highlight-color);
+}
+
 #header {
 	margin-bottom: 40pt;
 }
 
 #header-title {
+	font-size: 24pt;
 	color: var(--header-color);
+
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#header-title a {
+	color: var(--text-color-light);
 }
 
 #header-subtitle {
 	color: var(--highlight-color);
 	font-weight: 300;
+	font-size: 16pt;
+
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 #header-title a:hover {
@@ -137,24 +173,16 @@ a:hover {
  * Sidebar
  */
 
-
 .sidebar-header {
 	margin-top: 20pt;
-	color: var(--text-color);
-	margin-bottom: 10pt;
+	color: var(--header-color);
+	margin-bottom: 49pt;
 }
 
 .sidebar-breaker {
-	height: 2em;
+	height: 1em;
 }
 
-.sidebar-link a {
-	color: var(--extra-text-color-light);
-}
-
-.sidebar-link a:hover {
-	color: var(--highlight-color);
-}
 
 /*
  * Post
@@ -164,25 +192,28 @@ a:hover {
 	margin-bottom: 50pt;
 }
 
+.blog-post-heading {
+	margin-bottom: 30pt;
+}
+
 .blog-post-meta {
 	font-size: 11pt;
 }
 
 .blog-post-title {
-	color: var(--header-color);
 	font-size: 18pt;
 
 	margin-top: 5pt;
 	margin-bottom: 5pt;
 }
 
+.blog-post-title a {
+	color: var(--header-color);
+}
+
 .blog-post-title a:hover {
 	text-decoration: none;
 	color: var(--highlight-color-light);
-}
-
-.blog-post-tags {
-	margin-bottom: 30pt;
 }
 
 .blog-post-tag {
@@ -198,15 +229,52 @@ a:hover {
 	color: var(--highlight-color-light);
 }
 
-.blog-post-content a {
-	color: var(--highlight-color)
-}
-
-.blog-post-content a:hover {
-	color: var(--highlight-color-light)
-}
-
 /* <!--more--> idk how to remove it otherwise */
 .blog-post-single tt {
 	display: none;
+}
+
+/*
+ * Content styling
+ */
+
+.blog-post-content h1, 
+.blog-post-content h2, 
+.blog-post-content h3,
+.blog-post-content h4, 
+.blog-post-content h5, 
+.blog-post-content h6 {
+	color: var(--text-color-light);
+	margin-top: 20pt;
+	margin-bottom: 20pt;
+}
+
+.blog-post-content h1 {
+	font-size: 16pt;
+}
+
+.blog-post-content h2 {
+	font-size: 15pt;
+}
+
+.blog-post-content h3 {
+	font-size: 14pt;
+}
+
+.blog-post-content strong {
+	color: var(--text-color-light);
+}
+
+pre.hljs {
+	border-radius: 0.5em;
+	font-size: 10pt !important;
+	margin-bottom: 10pt;
+	line-height: 1.2em;
+}
+
+code:not(.hljs) {
+	background-color: #272822;
+	border-radius: 0.4em;
+	padding: 0.25em;
+	font-size: 10pt !important;
 }
