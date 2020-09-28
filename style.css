@@ -440,3 +440,16 @@ code:not(.hljs) {
 	margin-left: 5pt;
 	font-size: 11pt;
 }
+
+#author {
+	display: inline-block;
+	float: left;
+	width: auto;
+	margin-right: 2pt;
+}
+
+#email {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 2pt;
+}

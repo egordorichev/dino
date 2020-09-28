@@ -24,8 +24,8 @@ function html5_search_form($form) {
 add_filter('get_search_form', 'html5_search_form');
 
 function gb_comment_form_tweaks($fields) {
-	$fields['author'] = '<input id="author" name="author" value="" placeholder="Name*" size="30" maxlength="245" required="required" type="text">';
-	$fields['email'] = '<input id="email" name="email" type="email" value="" placeholder="Email*" size="30" maxlength="100" aria-describedby="email-notes" required="required">';	
+	$fields['author'] = '<input id="author" name="author" value="" placeholder="Nickname" size="30" maxlength="245" required="required" type="text">';
+	$fields['email'] = '<input id="email" name="email" type="email" value="" placeholder="Email" size="30" maxlength="100" aria-describedby="email-notes" required="required">';	
 
 	unset($fields['comment']);
 
