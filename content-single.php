@@ -38,7 +38,7 @@
 				$my_query->the_post(); 
 				?>
 					<li>
-						<a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></div>
+						<a href="<?php the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</li>
 					<?php 
 			}
