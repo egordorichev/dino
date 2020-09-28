@@ -70,6 +70,11 @@ ul {
 	padding-left: 0;
 }
 
+ol {
+	margin-left: 1.25em; 
+	padding-left: 0;
+}
+
 /*
  * Basic helper classes
  */
@@ -329,6 +334,10 @@ code:not(.hljs) {
 .search-results {
 	margin-bottom: 20pt;
 	color: var(--header-color);
+}
+
+.blog-post-content img {
+	width: 100%;
 }
 
 /*
