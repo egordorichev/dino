@@ -208,19 +208,19 @@ li {
 }
 
 input, textarea {
-	background-color: #333;
-	padding: 0.5em;
-	box-sizing: border-box;
-	border-radius: 0.4em;
-	border: none;
-	color: var(--text-color);
+	background-color: #333 !important;
+	padding: 0.5em !important;
+	box-sizing: border-box !important;
+	border-radius: 0.4em !important;
+	border: none !important;
+	color: var(--text-color) !important;
 
-	font-family: 'Roboto', sans-serif;
-	font-size: 12pt;
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 12pt !important;
 }
 
 input:focus, textarea:focus {
-	outline: none;
+	outline: none !important;
 }
 
 #s {
@@ -474,4 +474,17 @@ code:not(.hljs) {
 	display: inline-block;
 	width: 50%;
 	margin-bottom: 2pt;
+}
+
+/*
+ * Mailist singup
+ */
+
+.EMAIL-label {
+	margin-bottom: 10pt;
+	display: block;
+}
+
+checkbox {
+	margin-right: 5pt;
 }

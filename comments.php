@@ -14,9 +14,8 @@ function format_comment($comment, $args, $depth) {
 						<?php echo get_comment_author(); ?>
 					</span>
 					<span class="comment-date">
-						<?php
-							echo human_time_diff(strtotime(get_comment_date() . ' ' . get_comment_time()), $time) . ' ago';
-						?>
+					<?php printf( _x( '%s ago', '%s = human-readable time difference', 'your-text-domain' ), human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?>
+
 					</span>
 				</div>
 				<div class="comment-content">

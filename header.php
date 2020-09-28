@@ -27,7 +27,7 @@
 		<div id="header">
 			<a href="<?php echo get_site_url(); ?>"><div id="logo" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/logo.png);"></div></a>
 			<h1 id="header-title"><a href="<?php echo get_site_url(); ?>">Rexcellent Games</a></h1>
-			<h3 id="header-subtitle"><a target="_blank" href="https://www.random.org/">
+			<h3 id="header-subtitle">
 				<?php 
 					$titles = Array(
 						"Making games",
@@ -43,12 +43,17 @@
 						"@egordorichev",
 						"Eügor",
 						"Do not referesh the page",
-						"Please, do not the cat"
+						"Please, do not the cat",
+						"<a href='https://store.steampowered.com/app/851150/Burning_Knight/'>Burning Knight</a>",
+						"Test successful",
+						"undefined",
+						"Tell your friends!",
+						"We've been preparing for this"
 					);
 
 					echo $titles[array_rand($titles)];
 				?>
-			</a></h3>
+			</h3>
 		</div>
 
 		<div id="sidebar">
