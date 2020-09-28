@@ -31,7 +31,7 @@
 
 		$my_query = new wp_query($args);
 
-		if ($my_query->have_posts()) {
+		/*if ($my_query->have_posts()) {
 			echo '<div class="blog-post-related"><h4>Related Posts</h4><ul>';
 
 			while ($my_query->have_posts()) {
@@ -44,7 +44,7 @@
 			}
 
 			echo '</ul></div>';
-		}
+		}*/
 	}
 	
 	$post = $orig_post;

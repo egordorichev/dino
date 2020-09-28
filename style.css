@@ -399,6 +399,7 @@ code:not(.hljs) {
 .comment-meat {
 	display: inline-block;
 	margin-bottom: 10pt;
+	width: calc(100% - 32pt);
 }
 
 .comment-header {
@@ -444,7 +445,7 @@ code:not(.hljs) {
 #author {
 	display: inline-block;
 	float: left;
-	width: auto;
+	width: calc(50% - 2pt);
 	margin-right: 2pt;
 }
 
