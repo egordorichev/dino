@@ -42,11 +42,17 @@
 					</li>
 					<?php 
 			}
+
 			echo '</ul></div>';
 		}
 	}
+	
 	$post = $orig_post;
-wp_reset_query(); 
+	wp_reset_query(); 
+
+	if (comments_open()){
+  	comments_template();
+	}
 ?>
 	</div>
 </div>

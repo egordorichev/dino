@@ -27,6 +27,9 @@ Tags:
 	--highlight-color-light: var(--text-color);
 
 	--header-color: #ddd;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 12pt;
 }
 
 html, body {
@@ -41,8 +44,6 @@ body {
 	background: url(http://api.thumbr.it/whitenoise-361x370.png?background=101010ff&noise=474747&density=60&opacity=10);
 
 	color: var(--text-color);
-	font-family: 'Roboto', sans-serif;
-	font-size: 12pt;
 }
 
 p {
@@ -192,16 +193,21 @@ ul {
 	height: 1em;
 }
 
-#s {
+input, textarea {
 	background-color: #333;
 	padding: 0.5em;
+	box-sizing: border-box;
 	border-radius: 0.4em;
 	border: none;
 	color: var(--text-color);
 }
 
-#s:focus {
+input:focus, textarea:focus {
 	outline: none;
+}
+
+#s {
+	width: 100%;
 }
 
 /*
@@ -323,4 +329,114 @@ code:not(.hljs) {
 .search-results {
 	margin-bottom: 20pt;
 	color: var(--header-color);
+}
+
+/*
+ * Comments
+ */
+
+.blog-post-related {
+	margin-bottom: 40pt;
+}
+
+.blog-post-comments {
+	margin-top: 20pt;
+}
+
+#reply-title {
+	margin-bottom: 10pt;
+	color: var(--header-color);
+}
+
+#comment {
+	padding: 10pt;
+	resize: none;
+	width: 100%;
+	margin-bottom: 5pt;
+	overflow: hidden;
+}
+
+#submit {
+	cursor: pointer;
+	-moz-transition: background-color .1s ease-in;
+	-o-transition: background-color .1s ease-in;
+	-webkit-transition: background-color .1s ease-in;
+}
+
+#submit:hover {
+	color: var(--header-color);
+	background-color: #555;
+}
+
+.logged-in-as {
+	display: none;
+}
+
+.blog-post-comment {
+
+}
+
+.comment-icon {
+	display: inline-block;
+	margin-right: 5pt;
+	float: left;
+}
+
+.blog-post-comment .blog-post-comment .comment-icon img {
+	width: 16pt;
+	height: 16pt;
+}
+
+
+.comment-icon img {
+	border-radius: 50%;
+	border: 2px solid black;
+
+	width: 24pt;
+	height: 24pt;
+}
+
+.comment-meat {
+	display: inline-block;
+	margin-bottom: 10pt;
+}
+
+.comment-header {
+	margin-bottom: 2pt;
+	display: inline-block;
+	color: var(--extra-text-color);
+}
+
+.comment-content {
+	margin-bottom: 2pt;
+}
+
+.comment-form .form-submit {
+	display: inline-block;
+}
+
+.blog-post-comment .blog-post-comment {
+	margin-left: 20pt;
+}
+
+#respond #reply-title {
+	display: none;
+}
+
+.comment-reply-link {
+	font-size: 11pt;
+}
+
+.blog-post-comment .comment-respond {
+	margin-bottom: 4pt;
+	margin-left: 30pt;
+}
+
+.blog-post-comment .blog-post-comment .comment-respond {
+	margin-left: 23pt;
+}
+
+#cancel-comment-reply-link {
+	margin-left: 5pt;
+	font-size: 11pt;
 }

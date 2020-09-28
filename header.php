@@ -6,7 +6,9 @@
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-	<?php wp_head(); ?>
+	<?php 
+		wp_head(); 
+	?>
 </head>
 <body>
 	<style>
