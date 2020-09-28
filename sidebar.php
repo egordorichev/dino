@@ -1,6 +1,6 @@
 <div class="sidebar-header"><?php get_search_form(); ?></div>
 
-<div class="sidebar-link"><a target="_blank" href="#">About me</a></div>
+<div class="sidebar-link"><a target="_blank" href="https://egordorichev.github.io">About me</a></div>
 <div class="sidebar-link"><a target="_blank" href="https://github.com/egordorichev">Github</a></div>
 <div class="sidebar-link"><a target="_blank" href="https://twitter.com/egordorichev">Twitter</a></div>
 <div class="sidebar-breaker"></div>

@@ -75,6 +75,15 @@ ol {
 	padding-left: 0;
 }
 
+ul, ol {
+	margin-bottom: 10pt;
+}
+
+li {
+	margin-bottom: 2pt;
+}
+
+
 /*
  * Basic helper classes
  */
@@ -189,9 +198,9 @@ ol {
  */
 
 .sidebar-header {
-	margin-top: 20pt;
+	margin-top: 92pt;
 	color: var(--header-color);
-	margin-bottom: 49pt;
+	margin-bottom: 10pt;
 }
 
 .sidebar-breaker {
@@ -279,8 +288,8 @@ input:focus, textarea:focus {
 .blog-post-content h5, 
 .blog-post-content h6 {
 	color: var(--text-color-light);
-	margin-top: 20pt;
-	margin-bottom: 20pt;
+	margin-top: 30pt;
+	margin-bottom: 10pt;
 }
 
 .blog-post-content h1 {
@@ -299,9 +308,12 @@ input:focus, textarea:focus {
 	color: var(--text-color-light);
 }
 
-pre code {
+pre {
 	border-radius: 0.5em;
 	margin-bottom: 10pt;
+}
+
+pre code {
 	line-height: 1.2em;
 	font-size: 9pt;
 }
@@ -341,6 +353,7 @@ code:not(.hljs) {
 
 .blog-post-content img {
 	max-width: 100%;
+	border-radius: 5pt;
 }
 
 /*

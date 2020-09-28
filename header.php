@@ -16,8 +16,11 @@
 <body>
 	<style>
 		* {
-			--highlight-color: hsl(<?php echo date('z') / 366 * 360; ?> 49% 65% / 1);
-			--highlight-color-light: hsl(<?php echo date('z') / 366 * 360; ?> 49% 75% / 1);
+			<?php 
+				$c = (date('z') / 366 * 360 - 260) % 360;	
+			?>
+			--highlight-color: hsl(<?php echo $c; ?> 49% 55% / 1);
+			--highlight-color-light: hsl(<?php echo $c; ?> 49% 65% / 1);
 		}
 	</style>
 	<div id="content">

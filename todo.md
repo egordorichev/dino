@@ -1,5 +1,8 @@
-* fix the excerpt, it still doesnt respect the more tag
-* show image previews if posts have them
+* MAILING LIST
 * social media metatags
 * more sub titles
 * tags should be separated by commas or smth?
+* comments markdown
+
+# overscope
+* comment upvotes
