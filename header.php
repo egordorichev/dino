@@ -29,18 +29,22 @@
 			<h1 id="header-title"><a href="<?php echo get_site_url(); ?>">Rexcellent Games</a></h1>
 			<h3 id="header-subtitle"><a target="_blank" href="https://www.random.org/">
 				<?php 
-					$titles = Array("Making games",
-					"Math.random()",
-					"Dev chronicles",
-					"A blog",
-					"Thanks.",
-					"Letters from the past",
-					"The future calls for something new",
-					"Egor lurks here",
-					"Code & co",
-					"It takes what it takes",
-					"@egordorichev",
-					"Eügor");
+					$titles = Array(
+						"Making games",
+						"Math.random()",
+						"Dev chronicles",
+						"A blog",
+						"Thanks.",
+						"Letters from the past",
+						"The future calls for something new",
+						"Egor lurks here",
+						"Code & co",
+						"It takes what it takes",
+						"@egordorichev",
+						"Eügor",
+						"Do not referesh the page",
+						"Please, do not the cat"
+					);
 
 					echo $titles[array_rand($titles)];
 				?>

@@ -5,7 +5,7 @@
 
 		<?php
 			if (has_tag()) {
-				echo get_the_tag_list('<div class="blog-post-tags"><span class="blog-post-tag">','</span><span class="blog-post-tag">','</span></div>');
+				echo get_the_tag_list('<div class="blog-post-tags"><span class="blog-post-tag">','</span>, <span class="blog-post-tag">','</span></div>');
 			}
 		?>
 	</div>

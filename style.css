@@ -264,10 +264,6 @@ input:focus, textarea:focus {
 	color: var(--highlight-color-light);
 }
 
-.blog-post-tag {
-	margin-right: 5pt;
-}
-
 .blog-post-tag a {
 	font-size: 11pt;
 	color: var(--highlight-color);
