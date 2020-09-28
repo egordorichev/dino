@@ -299,7 +299,7 @@ input:focus, textarea:focus {
 	color: var(--text-color-light);
 }
 
-pre.hljs {
+pre code {
 	border-radius: 0.5em;
 	margin-bottom: 10pt;
 	line-height: 1.2em;
