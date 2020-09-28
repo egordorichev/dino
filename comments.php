@@ -89,9 +89,6 @@ observe(text, 'paste', delayedResize);
 observe(text, 'drop', delayedResize);
 observe(text, 'keydown', delayedResize);
 
-text.focus();
-text.select();
-
 resize();
 
 function applyToAllReplyLinks(c) {
