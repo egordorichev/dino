@@ -41,7 +41,7 @@ html, body {
 
 body {
 	background-color: #101010;
-	background: url(http://api.thumbr.it/whitenoise-361x370.png?background=101010ff&noise=474747&density=60&opacity=10);
+	background: url(https://api.thumbr.it/whitenoise-361x370.png?background=101010ff&noise=474747&density=60&opacity=10);
 
 	color: var(--text-color);
 }

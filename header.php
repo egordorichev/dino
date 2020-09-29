@@ -1,3 +1,4 @@
+<?php $_SERVER['HTTPS'] = 1; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,8 @@
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/monokai.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/monokai.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
 	<script charset="UTF-8"	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/csharp.min.js"></script>
 	<?php 
 		wp_head(); 
